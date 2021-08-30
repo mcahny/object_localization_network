@@ -1,6 +1,16 @@
-<div align="center">
-  <img src="resources/mmdet-logo.png" width="600"/>
-</div>
+
+# Learning Open-World Object Proposals without Learning to Classify
+
+## Pytorch implementation for "Learning Open-World Object Proposals without Learning to Classify" (arXiv 2021) <br/>[[Paper](https://arxiv.org/abs/2108.06753)]
+
+[Dahun Kim](https://mcahny.github.io/), [Tsung-Yi Lin](https://scholar.google.com/citations?user=_BPdgV0AAAAJ), [Anelia Angelova](https://scholar.google.co.kr/citations?user=nkmDOPgAAAAJ), [In So Kweon](https://rcv.kaist.ac.kr), and [Weicheng Kuo](https://weichengkuo.github.io/).
+
+
+<img src="./images/epic.png" width="800"> <br/>
+**OLN: Object Localization Network**
+Humans can recognize novel objects in this image despite having never seen them  before. “Is it possible to learn open-world (novel) object proposals?” In this paper we propose Object Localization Network (OLN) that learns localization cues instead of foreground vs background classification. Only trained on COCO, OLN is able to propose many novel objects (top) missed by Mask R-CNN (bottom) on an out-of-sample frame in an ego-centric video.
+
+
 
 **News**: We released the technical report on [ArXiv](https://arxiv.org/abs/1906.07155).
 

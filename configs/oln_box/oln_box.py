@@ -106,7 +106,7 @@ model = dict(
             nms_post=2000,
             max_num=2000,
             # <<<
-            nms_thr=0.8,
+            nms_thr=0.9,
             # >>>
             min_bbox_size=0),
         rcnn=dict(
@@ -226,4 +226,4 @@ load_from = None
 resume_from = None
 workflow = [('train', 1)]
 
-work_dir='./work_dirs/oln_box_rpnnms08/'
+work_dir='./work_dirs/oln_box_rpnnms09/'
