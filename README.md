@@ -22,6 +22,19 @@ We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR
 |    OLN-Box     | 24.8  | 18.0  | 26.4  |  33.4  |  39.0  |  45.0   | [model](https://drive.google.com/uc?id=1uL6TRhpSILvWeR6DZ0x9K9VywrQXQvq9) |
 
 
+## Citation
+
+If you use this toolbox or benchmark in your research, please cite this project.
+
+```bibtex
+@article{kim2021oln,
+  title={Learning Open-World Object Proposals without Learning to Classify},
+  author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
+  journal={arXiv preprint arXiv:2108.06753},
+  year={2021}
+}
+```
+
 
 ## Disclaimer
 
@@ -75,24 +88,9 @@ trained_weights/latest.pth ${NUM_GPUS}
 ```
 # Multi-GPU distributed training
 bash tools/dist_train.sh configs/oln_box/oln_box.py ${NUM_GPUS}
+
 ```
 
-
-## Acknowledgement
-
-
-## Citation
-
-If you use this toolbox or benchmark in your research, please cite this project.
-
-```bibtex
-@article{kim2021oln,
-  title={Learning Open-World Object Proposals without Learning to Classify},
-  author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
-  journal={arXiv preprint arXiv:2108.06753},
-  year={2021}
-}
-```
 
 ## Contact
 
