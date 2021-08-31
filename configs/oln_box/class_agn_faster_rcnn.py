@@ -75,7 +75,7 @@ model = dict(
             nms_pre=2000,
             nms_post=2000,
             max_num=2000,
-            nms_thr=0.7,
+            nms_thr=1.0,
             min_bbox_size=0),
         rcnn=dict(
             assigner=dict(
@@ -103,7 +103,7 @@ model = dict(
             min_bbox_size=0),
         rcnn=dict(
             score_thr=0.0,
-            nms=dict(type='nms', iou_threshold=0.5),
+            nms=dict(type='nms', iou_threshold=0.7),
             max_per_img=1500,
             )))
 dataset_type = 'CocoSplitDataset'

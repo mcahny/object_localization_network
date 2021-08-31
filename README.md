@@ -14,7 +14,7 @@ Humans can recognize novel objects in this image despite having never seen them 
 
 ## Performance on COCO-Split setting
 
-### VOC to non-VOC cross-category generalization
+### Cross-category generalization
 
 We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR@k evaluation does not count those proposals on the 'seen' classes into the budget (k), to avoid evaluating recall on see-class objects.
 
@@ -67,7 +67,8 @@ Our trained models are available for download [here](https://drive.google.com/uc
 
 ```
 # Multi-GPU distributed testing
-bash tools/dist_test_bbox.sh configs/oln_box/oln_box.py trained_weights/latest.pth ${NUM_GPUS}
+bash tools/dist_test_bbox.sh configs/oln_box/oln_box.py \
+trained_weights/latest.pth ${NUM_GPUS}
 ```
 
 
