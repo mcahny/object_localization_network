@@ -12,15 +12,13 @@ Humans can recognize novel objects in this image despite having never seen them 
 
 <img src="./images/epic.png" width="500"> <img src="./images/oln_overview.png" width="500"> <br/>
 
-## License
-
-This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Disclaimer
 
 This repo is tested under Python 3.7, PyTorch 1.7.0, Cuda 11.0, and mmcv==1.2.5.
 
 ## Installation
+
 This repo is built based on [mmdetection](https://github.com/open-mmlab/mmdetection). 
 
 You can use following commands to create conda env with related dependencies.
@@ -54,32 +52,29 @@ object_localization_network
 
 
 ## Testing
-Our trained models are available for download [here](https://drive.google.com/uc?id=1KcHYnghbs2KC6hQc7QVkPkEiJMrLr73s). Rename it to `latest.pth` and run the following commands to test OLN on COCO dataset.
+Our trained models are available for download [here](https://drive.google.com/uc?id=1uL6TRhpSILvWeR6DZ0x9K9VywrQXQvq9). Place it under `trained_weights/latest.pth` and run the following commands to test OLN on COCO dataset.
 
 ```
 # Multi-GPU distributed testing
-bash ./tools/dist_test_bbox.sh configs/oln_box/oln_box.py \
-  trained_weights/latest.pth ${NUM_GPUS}
+bash tools/dist_test_bbox.sh configs/oln_box/oln_box.py trained_weights/latest.pth ${NUM_GPUS}
 ```
 
 
 ## Training
 ```
 # Multi-GPU distributed training
-bash ./tools/dist_train.sh configs/oln_box/oln_box.py ${NUM_GPUS}
+bash tools/dist_train.sh configs/oln_box/oln_box.py ${NUM_GPUS}
 ```
 
 
 ## Acknowledgement
 
-MMDetection is an open source project that is contributed by researchers and engineers from various colleges and companies. We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks.
-We wish that the toolbox and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new detectors.
 
 ## Citation
 
 If you use this toolbox or benchmark in your research, please cite this project.
 
-```
+```bibtex
 @article{kim2021oln,
   title={Learning Open-World Object Proposals without Learning to Classify},
   author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
@@ -87,3 +82,7 @@ If you use this toolbox or benchmark in your research, please cite this project.
   year={2021}
 }
 ```
+
+## Contact
+
+If you have any questions regarding the repo, please contact Dahun Kim (mcahny01@gmail.com) or create an issue.

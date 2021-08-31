@@ -27,7 +27,7 @@ model = dict(
         feat_channels=256,
         anchor_generator=dict(
             type='AnchorGenerator',
-            # Use single anchor per location.
+            # Use a single anchor per location.
             scales=[8],
             ratios=[1.0],
             strides=[4, 8, 16, 32, 64]),
@@ -105,9 +105,8 @@ model = dict(
             nms_pre=2000,
             nms_post=2000,
             max_num=2000,
-            # <<<
-            nms_thr=0.9,
-            # >>>
+            # rpn_nms is not used.
+            nms_thr=1.0,
             min_bbox_size=0),
         rcnn=dict(
             assigner=dict(
@@ -139,7 +138,8 @@ model = dict(
             # max_per_img should be greater enough than k of AR@k evaluation
             # because the cross-dataset AR evaluation does not count those
             # proposals on the 'seen' classes into the budget (k), to avoid
-            # evaluating recall on seen-class objects.
+            # evaluating recall on seen-class objects. It's recommended to use
+            # max_per_img=1500 or 2000 when evaluating upto AR@1000.
             max_per_img=1500,
             )
     ))
@@ -178,28 +178,22 @@ data = dict(
     samples_per_gpu=2,
     workers_per_gpu=2,
     train=dict(
-        # <
         is_class_agnostic=True,
         train_class='voc',
         eval_class='nonvoc',
-        # >
         type=dataset_type,
         pipeline=train_pipeline,
         ),
     val=dict(
-        # <
         is_class_agnostic=True,
         train_class='voc',
         eval_class='nonvoc',
-        # >
         type=dataset_type,
         pipeline=test_pipeline),
     test=dict(
-        # <
         is_class_agnostic=True,
         train_class='voc',
         eval_class='nonvoc',
-        # >
         type=dataset_type,
         pipeline=test_pipeline))
 
@@ -226,4 +220,4 @@ load_from = None
 resume_from = None
 workflow = [('train', 1)]
 
-work_dir='./work_dirs/oln_box_rpnnms09/'
+work_dir='./work_dirs/oln_box/'
