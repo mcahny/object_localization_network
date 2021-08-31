@@ -76,6 +76,8 @@ Our trained models are available for download [here](https://drive.google.com/uc
 # Multi-GPU distributed testing
 bash tools/dist_test_bbox.sh configs/oln_box/oln_box.py \
 trained_weights/latest.pth ${NUM_GPUS}
+# OR
+python tools/test.py configs/oln_box/oln_box.py work_dirs/oln_box/latest.pth --eval bbox
 ```
 
 
