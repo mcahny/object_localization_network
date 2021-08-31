@@ -12,6 +12,17 @@ Humans can recognize novel objects in this image despite having never seen them 
 
 <img src="./images/epic.png" width="500"> <img src="./images/oln_overview.png" width="500"> <br/>
 
+## Performance on COCO-Split setting
+
+### VOC to non-VOC cross-category generalization
+
+We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR@k evaluation does not count those proposals on the 'seen' classes into the budget (k), to avoid evaluating recall on see-class objects.
+
+|     Method     |  AUC  | AR@10 | AR@30 | AR@100 | AR@300 | AR@1000 |
+|:--------------:|:-----:|:-----:|:-----:|:------:|:------:|:-------:|
+|    OLN-Box     | 24.8  | 18.1  | 26.5  |  33.5  |  39.0  |  45.0   |
+
+
 
 ## Disclaimer
 
