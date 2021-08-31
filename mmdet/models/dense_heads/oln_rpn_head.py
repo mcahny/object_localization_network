@@ -688,8 +688,6 @@ class OlnRPNHead(RPNHead):
                 ids = ids[valid_inds]
 
         nms_cfg = dict(type='nms', iou_threshold=cfg.nms_thr)
-
-        import pdb; pdb.set_trace()
         
         if nms_cfg in [0.0, 1.0]:
             # No NMS:
