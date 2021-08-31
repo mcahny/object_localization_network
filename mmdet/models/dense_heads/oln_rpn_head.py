@@ -691,9 +691,6 @@ class OlnRPNHead(RPNHead):
 
         # No NMS:
         dets = torch.cat([proposals, scores.unsqueeze(1)], 1)
-        # else:
-        #     dets, keep = batched_nms(proposals, scores, ids, nms_cfg)
-        #     return dets[:cfg.nms_post]
         
         return dets
 
