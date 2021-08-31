@@ -19,7 +19,7 @@ We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR
 
 |     Method     |  AUC  | AR@10 | AR@30 | AR@100 | AR@300 | AR@1000 |
 |:--------------:|:-----:|:-----:|:-----:|:------:|:------:|:-------:|
-|    OLN-Box     | 24.8  | 18.1  | 26.5  |  33.5  |  39.0  |  45.0   |
+|    OLN-Box     | 24.8  | 18.0  | 26.4  |  33.4  |  39.0  |  45.0   |
 
 
 

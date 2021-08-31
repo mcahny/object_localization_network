@@ -687,13 +687,14 @@ class OlnRPNHead(RPNHead):
                 scores = scores[valid_inds]
                 ids = ids[valid_inds]
 
-        # TODO: remove the hard coded nms type
-        # nms_cfg = dict(type='nms', iou_threshold=cfg.nms_thr)
-        # dets, keep = batched_nms(proposals, scores, ids, nms_cfg)
-        # return dets[:cfg.nms_post]
+        nms_cfg = dict(type='nms', iou_threshold=cfg.nms_thr)
+        if nms_cfg in [0.0, 1.0]:
+            # No NMS:
+            dets = torch.cat([proposals, scores.unsqueeze(1)], 1)
+        else:
+            dets, keep = batched_nms(proposals, scores, ids, nms_cfg)
+            return dets[:cfg.nms_post]
         
-        # No NMS:
-        dets = torch.cat([proposals, scores.unsqueeze(1)], 1)
         return dets
 
         
