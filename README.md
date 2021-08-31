@@ -5,6 +5,15 @@
 
 [Dahun Kim](https://mcahny.github.io/), [Tsung-Yi Lin](https://scholar.google.com/citations?user=_BPdgV0AAAAJ), [Anelia Angelova](https://scholar.google.co.kr/citations?user=nkmDOPgAAAAJ), [In So Kweon](https://rcv.kaist.ac.kr), and [Weicheng Kuo](https://weichengkuo.github.io/).
 
+```bibtex
+@article{kim2021oln,
+  title={Learning Open-World Object Proposals without Learning to Classify},
+  author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
+  journal={arXiv preprint arXiv:2108.06753},
+  year={2021}
+}
+```
+
 
 ## Introduction
 
@@ -20,20 +29,6 @@ We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR
 |     Method     |  AUC  | AR@10 | AR@30 | AR@100 | AR@300 | AR@1000 | Download |
 |:--------------:|:-----:|:-----:|:-----:|:------:|:------:|:-------:|:--------:|
 |    OLN-Box     | 24.8  | 18.0  | 26.4  |  33.4  |  39.0  |  45.0   | [model](https://drive.google.com/uc?id=1uL6TRhpSILvWeR6DZ0x9K9VywrQXQvq9) |
-
-
-## Citation
-
-If you use this toolbox or benchmark in your research, please cite this project.
-
-```bibtex
-@article{kim2021oln,
-  title={Learning Open-World Object Proposals without Learning to Classify},
-  author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
-  journal={arXiv preprint arXiv:2108.06753},
-  year={2021}
-}
-```
 
 
 ## Disclaimer
