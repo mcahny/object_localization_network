@@ -17,9 +17,9 @@ Humans can recognize novel objects in this image despite having never seen them 
 
 We train OLN on COCO VOC categories, and test on non-VOC categories. Note our AR@k evaluation does not count those proposals on the 'seen' classes into the budget (k), to avoid evaluating recall on see-class objects.
 
-|     Method     |  AUC  | AR@10 | AR@30 | AR@100 | AR@300 | AR@1000 |
-|:--------------:|:-----:|:-----:|:-----:|:------:|:------:|:-------:|
-|    OLN-Box     | 24.8  | 18.0  | 26.4  |  33.4  |  39.0  |  45.0   |
+|     Method     |  AUC  | AR@10 | AR@30 | AR@100 | AR@300 | AR@1000 | Download |
+|:--------------:|:-----:|:-----:|:-----:|:------:|:------:|:-------:|:--------:|
+|    OLN-Box     | 24.8  | 18.0  | 26.4  |  33.4  |  39.0  |  45.0   | [model](https://drive.google.com/uc?id=1uL6TRhpSILvWeR6DZ0x9K9VywrQXQvq9) |
 
 
 
