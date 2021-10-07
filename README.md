@@ -43,7 +43,7 @@ You can use following commands to create conda env with related dependencies.
 conda create -n oln python=3.7 -y
 conda activate oln
 conda install pytorch=1.7.0 torchvision cudatoolkit=11.0 -c pytorch -y
-pip install mmcv-full
+pip install mmcv-full==1.2.7
 pip install -r requirements.txt
 pip install -v -e . 
 ```
