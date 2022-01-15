@@ -9,8 +9,8 @@
 @article{kim2021oln,
   title={Learning Open-World Object Proposals without Learning to Classify},
   author={Kim, Dahun and Lin, Tsung-Yi and Angelova, Anelia and Kweon, In So and Kuo, Weicheng},
-  journal={arXiv preprint arXiv:2108.06753},
-  year={2021}
+  journal={IEEE Robotics and Automation Society},
+  year={2022}
 }
 ```
 
