@@ -1,7 +1,7 @@
 
 # Learning Open-World Object Proposals without Learning to Classify
 
-## Pytorch implementation for "Learning Open-World Object Proposals without Learning to Classify" ([arXiv 2021](https://arxiv.org/abs/2108.06753)) <br/>
+## Pytorch implementation for "Learning Open-World Object Proposals without Learning to Classify" ([R-AL and ICRA 2022](https://arxiv.org/abs/2108.06753)) <br/>
 
 [Dahun Kim](https://mcahny.github.io/), [Tsung-Yi Lin](https://scholar.google.com/citations?user=_BPdgV0AAAAJ), [Anelia Angelova](https://scholar.google.co.kr/citations?user=nkmDOPgAAAAJ), [In So Kweon](https://rcv.kaist.ac.kr), and [Weicheng Kuo](https://weichengkuo.github.io/).
 
